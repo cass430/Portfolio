@@ -169,8 +169,7 @@ main {
 }
 
 main img {
-  max-width: 300px;
-  max-height: 170px;
+  max-width: 430px;
 }
 
 .row {
@@ -252,4 +251,9 @@ main a:hover {
 
 .first-button {
   margin-top: 28px;
+}
+
+.work-img {
+  max-width: 300px;
+  max-height: 170px;
 }
