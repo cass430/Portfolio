@@ -277,6 +277,19 @@ main a:hover {
   display: none;
 }
 
+/*skills page*/
+
+.skills > .row > .col > i {
+  font-size: 30px;
+}
+
+.skills > .row > .col > i:hover {
+  color: #76a4f9;
+}
+
+.skills-heading {
+  margin-bottom: 30px;
+}
 @media only screen and (max-width: 768px) {
   .navigation {
     display: none;
