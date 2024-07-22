@@ -305,6 +305,31 @@ main a:hover {
 .skills-heading {
   margin-bottom: 30px;
 }
+
+/* Certs */
+
+.col-container {
+  text-align: center;
+  position: relative;
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Ensure the container takes up full height of its parent */
+}
+
+.certs {
+  width: 300px;
+  height: 100px;
+  display: flex; /* Use flexbox for text centering */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+}
+
+.certs:hover {
+  background-color: #dbe6f9;
+  color: #76a4f9;
+}
+
 @media only screen and (max-width: 768px) {
   .navigation {
     display: none;
