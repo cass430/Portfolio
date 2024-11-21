@@ -3,7 +3,8 @@ document
   .getElementById("hamburger-icon")
   .addEventListener("click", function () {
     var menu = document.querySelector(".mobile-menu");
-    if (menu.style.display === "flex") {
+    var currentDisplay = window.getComputedStyle(menu).display;
+    if (currentDisplay === "flex") {
       menu.style.display = "none";
     } else {
       menu.style.display = "flex";

@@ -206,6 +206,10 @@ h4 span {
   color: #76a4f9;
 }
 
+.col {
+  padding: 10px;
+}
+
 .container {
   max-width: 700px;
 }
@@ -259,9 +263,15 @@ main a:hover {
   text-align: left;
 }
 
+/* Ensure the buttons are vertically aligned below the image */
+.project-button-container {
+  margin-top: 20px; /* Add spacing between image and button */
+  text-align: center; /* Center the button below the image */
+}
+
 .work-button {
-  padding: 5px 10px;
-  margin-top: 16px;
+  display: block; /* Ensures the button behaves as a block element */
+  margin: 10px auto; /* Centers the button horizontally */
 }
 
 .first-button {
@@ -359,6 +369,40 @@ main a:hover {
     text-decoration: none;
     padding: 10px 20px;
   }
+
+  .row.align-items-center {
+    flex-direction: column; /* Stack the columns vertically on small screens */
+  }
+
+  .col {
+    width: 100%; /* Make each column take up 100% of the width */
+  }
+
+  .selfie {
+    width: 90%; /* Make the image take up 90% of the width */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is displayed as a block-level element */
+  }
+
+  /* To ensure the image appears first */
+  .col:first-child {
+    order: 1; /* Make the image column come first */
+  }
+
+  .col:last-child {
+    order: 2; /* Make the text column come second */
+  }
+
+  .about-me-content {
+    text-align: center; /* Center the text */
+    margin-bottom: 20px;
+  }
+
+  .about-me-content h1,
+  .about-me-content h4,
+  .about-me-content p {
+    text-align: center;
+  }
 }
 
 /* slidding effects on home page */
@@ -381,4 +425,8 @@ main a:hover {
 .show {
   opacity: 1;
   transform: translateX(0); /* Slide to the original position */
+}
+
+.mobile-menu {
+  display: none;
 }
