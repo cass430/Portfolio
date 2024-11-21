@@ -48,13 +48,17 @@
   height: 100%;
   display: table;
   float: left;
+  margin-top: 11px;
+}
+
+.logo-container a {
+  text-decoration: none;
 }
 
 .logo-container h1 {
   color: white;
   height: 100%;
   display: table-cell;
-  vertical-align: middle;
 }
 
 .navigation {
@@ -104,6 +108,7 @@ main {
   justify-content: center;
   align-items: center;
   height: 400px;
+  text-align: center;
 }
 
 .banner h3 {
@@ -219,6 +224,20 @@ h4 span {
   border-radius: 30px;
 }
 
+.mobile-selfie {
+  margin: 0 auto;
+  max-width: 90%;
+
+  display: none;
+  margin: 20px;
+}
+
+.mobile-selfie img {
+  text-align: center;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
 button {
   border-radius: 15px !important;
   margin: 20px;
@@ -261,6 +280,7 @@ main a:hover {
 
 .contact-content {
   text-align: left;
+  margin-left: 20px;
 }
 
 /* Ensure the buttons are vertically aligned below the image */
@@ -340,7 +360,11 @@ main a:hover {
   color: #76a4f9;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+  h4 {
+    margin: 0 auto;
+  }
+
   .navigation {
     display: none;
   }
@@ -378,12 +402,6 @@ main a:hover {
     width: 100%; /* Make each column take up 100% of the width */
   }
 
-  .selfie {
-    width: 90%; /* Make the image take up 90% of the width */
-    margin: 0 auto; /* Center the image horizontally */
-    display: block; /* Ensure the image is displayed as a block-level element */
-  }
-
   /* To ensure the image appears first */
   .col:first-child {
     order: 1; /* Make the image column come first */
@@ -402,6 +420,43 @@ main a:hover {
   .about-me-content h4,
   .about-me-content p {
     text-align: center;
+  }
+
+  .group-2 {
+    flex-direction: column; /* Stack content vertically on mobile */
+  }
+
+  .group-2 .col-lg-6 {
+    width: 100%; /* Make the columns take full width */
+    text-align: center; /* Center the text and image */
+  }
+
+  .group-2 img {
+    margin-bottom: 5px; /* Add spacing below the image */
+  }
+
+  .group-2 .col-lg-6:first-child {
+    order: 2; /* Move the text down */
+  }
+
+  .group-2 .col-lg-6:last-child {
+    order: 1; /* Keep the image at the top */
+  }
+
+  .row {
+    margin-bottom: 15px;
+  }
+
+  .portfolio-row {
+    flex-direction: column;
+  }
+
+  .selfie {
+    display: none;
+  }
+
+  .mobile-selfie {
+    display: flex;
   }
 }
 
