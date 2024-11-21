@@ -229,11 +229,12 @@ h4 span {
   max-width: 90%;
 
   display: none;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .mobile-selfie img {
-  text-align: center;
+  max-width: 100%;
+
   border-radius: 30px;
   margin: 0 auto;
 }
